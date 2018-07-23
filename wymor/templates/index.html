@@ -1,0 +1,29 @@
+{% extends 'default/base.html' %}
+
+{% block content %}
+  <h2>MENU</h2>
+  <h4>請選擇餐點</h4>
+
+<!-- 菜單 -->
+  <div class="menulist">
+    <div class="menutitle">
+      <h3>餐點名稱</h3>
+    </div>
+    <ul>
+      <div id="result"></div>
+    </ul>
+  </div>
+
+<!-- 購物車 -->
+<div id="buylist">
+  <h3>購物車</h3>
+  <div class="buy_item control_panel">
+    <label>確定餐點</label>
+    <input id="input_name" placeholder="名稱..."/>
+  <span class="addbtn">點餐</span>
+  </div>
+  <div id="items_list"></div>
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,20 @@
+{% extends 'default/base.html' %}
+
+{% block content %}
+
+
+<div class="container main-container">
+    <h1>新增菜單</h1>
+    <form method="POST" action='/menus/post'>
+      <label>餐點名稱</label>
+      <input class="form-control" type="text" name="title">
+      <label>價錢</label>
+      <input class="form-control" type="text" name="price">
+      <hr>
+      {% csrf_token %}
+      <button class="form-control btn btn-primary">送出</button> 
+    </form>
+  </div>
+
+
+{% endblock %}
