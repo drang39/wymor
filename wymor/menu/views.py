@@ -13,7 +13,9 @@ class MenuForm(forms.ModelForm):
 
 def get_menus_api(request):
   menus = Menu.objects.all()
+  # print(menus)
   data = serializers.serialize('json', menus)
+  print(data)
   return JsonResponse({'data': data})
 
 
